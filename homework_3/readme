@@ -1,1 +1,4 @@
-
+how to model the motion of a mass–spring system
+-differential equations analytically
+-discretizing it with finite differences
+-build and compare numerical time-stepping solutions
