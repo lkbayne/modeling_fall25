@@ -1,1 +1,7 @@
+HW 4 using MITgcm modeling downloads
 
+-cant run model on my own computer bc of HomeBrew gcc 
+
+for part 4:
+the my_run folder are the data files i edited
+the run folder is a zip Mike sent me after he ran his model
