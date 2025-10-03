@@ -1,0 +1,9 @@
+MITgcm model
+-globaloceanebm
+
+focusing on the heat equation
+-diffusion
+-advection
+
+key takeaway
+*advection rules
