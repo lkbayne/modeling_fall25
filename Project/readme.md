@@ -1,29 +1,27 @@
-# Monterey Bay Climate Change and Nutrient Dynamics
+# Monterey Bay Upwelling Nutrient Dynamics
 
 ## Project Overview
-This project investigates how decreased upwelling winds and increase sea surface temperature, expected under future climate change, may affect nutrient concentrations dynamics in Monterey Bay, California.
+This project investigates how winds impact upwelling and affect nutrient concentrations dynamics in Monterey Bay, California.
 
 ## Research Question
-How will climate change affect nutrient concentration in Monterey Bay given the projected decrease in upwelling winds and increase in sea surface temperature (SST)?
+How does wind strenght impact upwelling and nutrient concentration dynamics in Monterey Bay?
 
 ## Model Experiments
 To investigate this question, I will construct a regional ocean model spanning Monterey Bay and the surrounding offshore region. The model will simulate one year (2008), which is a year of strong upwelling as shown by the BEUTI Index.
 
 Two simulations will be performed:
-1. **Normal Conditions Run** – baseline wind, temperature, and sea surface height (SSH) conditions.  
-2. **Decreased Upwelling Run** – reduced upwelling-favorable winds and increased SST represent climate change effects.
-
-The second simulation will test whether weaker upwelling and warmer surface waters reduce nutrient supply and potentially promote more frequent or intense HAB events.
+1. **Normal Conditions Run** – baseline wind conditions.  
+2. **Decreased Upwelling Run** – reduced upwelling-favorable winds.
 
 ## Hypothesis
-Decreased winds, higher SST, and increased SSH will weaken upwelling, resulting in reduced transport of cold, nutrient-rich water to the surface, lower nutrient fluxes, and conditions that may favor HAB development.
+Decreased winds will weaken upwelling, resulting in reduced transport of cold, nutrient-rich water to the surface, lower nutrient fluxes, and conditions that may favor HAB development.
 
 ## Model Setup
 - **Model domain:** Monterey Bay and adjacent coastal ocean  
 - **Simulation period:** January–December 2008  
 - **Initial conditions:** ECCO Version 5 (January 2008)  
 - **Boundary and forcing:** Derived from ECCO Version 5 output  
-- **Perturbations:** decreased winds, increased SST, increased SSH  
+- **Perturbations:** decreased winds 
 
 ## Analysis
 - Create time series of nutrient concentrations for both model runs.  
@@ -31,4 +29,4 @@ Decreased winds, higher SST, and increased SSH will weaken upwelling, resulting 
 - Visualize changes with maps and a short movie showing nutrient differences over time.  
 
 ## Expected Outcome
-This study will help quantify how reduced upwelling and ocean warming may alter nutrient supply and increase the potential for harmful algal blooms in Monterey Bay.
+This study will help quantify how reduced upwelling may alter nutrient supply and increase the potential for harmful algal blooms in Monterey Bay.
