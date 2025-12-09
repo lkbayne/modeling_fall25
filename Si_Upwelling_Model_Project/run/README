@@ -1,4 +1,4 @@
-slm file
+slm file to sbacth in spartan
 run folder filled with:
   ln -s ../namelist/* .
   ln -s ../input/* .
