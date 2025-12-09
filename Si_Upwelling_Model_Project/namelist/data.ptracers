@@ -1,0 +1,11 @@
+&PTRACERS_PARM01
+ PTRACERS_numInUse= 1,
+ PTRACERS_Iter0= 0,
+#
+ PTRACERS_names( 1)= 'SILICATE',
+#
+ PTRACERS_units(1)= 'mmol/kg',
+#
+ PTRACERS_initialFile(1)='SILICATE_IC.bin',
+ &
+
