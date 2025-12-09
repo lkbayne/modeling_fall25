@@ -1,0 +1,7 @@
+#!/bin/bash
+#SBATCH --partition=nodes
+#SBATCH --nodes=3
+#SBATCH --ntasks=60
+#SBATCH --time=48:00:00
+export MPI_HOME=/scratch/home/ms27402/.conda/envs/ms274
+mpirun -np 60 ./mitgcmuv
