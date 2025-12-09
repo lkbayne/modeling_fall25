@@ -1,1 +1,10 @@
 input directory in spartan
+files are too large:	
+exf		
+SALT_IC.bin	
+THETA_IC.bin	
+VVEL_IC.bin
+ETAN_IC.bin	
+obcs		
+SILICATE_IC.bin	
+UVEL_IC.bin
