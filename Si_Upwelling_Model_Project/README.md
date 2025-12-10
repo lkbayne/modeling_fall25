@@ -39,7 +39,12 @@ The input files (input directory in spartan) need to be created to run the model
 Generate the following list of files using the notebooks indicated in paratheses:
 
 Model Grid (notebooks/Creating the Model Grid.ipynb)
+
 Bathymetry (notebooks/Creating the Bathymetry.ipynb)
+
 Initial Conditions (notebooks/Creating the Initial Conditions.ipynb)
+
 External Forcing Conditions (notebooks/Creating the External Forcing Conditions.ipynb)
-Boundary Conditions (notebooks/Creating the Boundary Conditions.ipynb) The model files should be placed into the input directory.
+
+Boundary Conditions (notebooks/Creating the Boundary Conditions.ipynb)
+
