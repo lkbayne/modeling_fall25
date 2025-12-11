@@ -120,7 +120,13 @@ Submit the new job script and rerun the model.
 
 
 ## Step 5: Analyze the Results
+Use the following code on your local terminal to get the entire output file (diags) to your computer:
+scp -r [username]@spartan03.sjsu.edu:/scratch/[username]/MITgcm/verification/tutorial_global_oce_latlon/run/diags .
+
 I used the following notebooks to analyze my data:
 Plots (jupyter_notebooks/)
+
 Profiles (jupyter_notebooks/)
+
 Answering the Science Question (jupyter_notebooks/)
+
