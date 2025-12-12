@@ -6,4 +6,4 @@ PRECIP_2008
 SWDOWN_2008
 UWIND_2008
 VWIND_2008
-
+create using: jupyter_notebooks/External_Forcing_Conditions.ipynb
