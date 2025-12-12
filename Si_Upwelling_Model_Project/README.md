@@ -171,10 +171,10 @@ scp -r [username]@spartan03.sjsu.edu:/scratch/[username]/MITgcm/verification/tut
 
 I used the following notebooks to analyze my data:
 To visualize my data:
-Movies of surface conditions over time of silicate, temperature, and salinity (jupyter_notebooks/)
+Movies of surface conditions over time of silicate, temperature, and salinity (jupyter_notebooks/Si_surface_movie.ipynb, Temp_surface_movie.ipynb, Sal_surface_movie.ipynb)
 
 To answer my scientific question:
-Timeseries of surface silicate, temperate, and salinity at set locations near shore and off shore (jupyter_notebooks/)
+Timeseries of surface silicate, temperate, and salinity at set locations near shore and off shore (jupyter_notebooks/Si_T_Sal_timeseries_midbay.ipynb, Si_T_Sal_timeseries_canyonhead.ipynb)
 
 
 
