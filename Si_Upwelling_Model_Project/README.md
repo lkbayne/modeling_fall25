@@ -5,7 +5,7 @@
 ## Project Discription
 In this project, I investigate how oceanic wind-driven upwelling influences nutrient dynamics in Monterey Bay, California. 
 
-My science question: How do upwelled, nutrient-rich waters reach the surface and propagate throughout Monterey Bay during a strong upwelling year, and how can a passive nutrient tracer be used to identify the pathways and seasonal processes that drive this transport?
+My science question: How do wind-driven upwelling events during a strong upwelling year influence the timing and propagation of nutrient-rich waters from the coast into Monterey Bay, and how can surfacea temperature, salinity, and a passive nutrient tracer be used to identify these events and propogations?
 
 I developed a regional ocean model covering Monterey Bay and the adjacent California coast. 
 
