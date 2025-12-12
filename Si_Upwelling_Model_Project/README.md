@@ -3,9 +3,9 @@
 
 
 ## Project Discription
-In this project, I investigate how coastal wind-driven upwelling influences nutrient dynamics in Monterey Bay, California. 
+In this project, I investigate how oceanic wind-driven upwelling influences nutrient dynamics in Monterey Bay, California. 
 
-My science question: How does wind strength impact upwelling intensity and near-surface nutrient concentrations in Monterey Bay?
+My science question: How do upwelled, nutrient-rich waters reach the surface and propagate throughout Monterey Bay during a strong upwelling year, and how can a passive nutrient tracer be used to identify the pathways and seasonal processes that drive this transport?
 
 I developed a regional ocean model covering Monterey Bay and the adjacent California coast. 
 
@@ -16,19 +16,13 @@ This year was selected because it represents a period of strong upwelling, as in
 I also derived the model’s boundary conditions and atmospheric forcing fields from ECCO Version 4.4 output.
 
 
-I performed two year-long simulations for 2008 to isolate the effect of wind strength:
+I performed one year-long simulation for 2008 forced with the full ECCO-derived wind fields, representing strong upwelling conditions.
 
-    High-wind run: forced with the full ECCO-derived wind fields, representing strong upwelling conditions.
-
-    Reduced-wind run: identical to the high-wind case, but with wind stress reduced to one-third of its original magnitude, 
-      thereby weakening Ekman-driven upwelling.
-
-I expect that stronger winds will enhance coastal upwelling, bringing colder, nutrient-rich deep water to the surface more effectively 
-than in the reduced-wind experiment. As a result, the high-wind run should exhibit higher surface nutrient concentrations.
+I expect that the strong upwelling in the spring will enhance coastal upwelling of colder, low salinity, and nutrient-rich deep water to the near shore surface waters.
 
 To visualize nutrient movement more directly, I also implemented a passive tracer (pTracer) of silicate (SiO2), from an observed silicate 
 profile obtained from a CTD cast in Monterey Bay. This tracer is transported by the model flow without influencing density or biogeochemistry, 
-allowing me to track the pathways and vertical movement of silicate-rich waters under different wind-forcing scenarios.
+allowing me to track the pathways and vertical movement of nutrient-rich waters under the high upwelling year.
 
 For analysis, I will:
   Construct a coastal time series of near-surface silicate for both simulations to quantify differences in nutrient concentrations through time.
@@ -80,7 +74,7 @@ Generate the following list of files using the notebooks indicated in paratheses
 3. Initial Conditions (jupyter_notebooks/InitialConditions_Si.ipynb.ipynb) - this notebook creates the _IC.bin files that are in the input directory
 
 
-4. External Forcing Conditions (jupyter_notebooks/External_Forcing_Conditions.ipynb) - need to make another external forcing conditions for the model with 1/3 of the wind, so using this notebook you can pull in the exf files created and 1/3 the uwind and vwind files (jupyter_notebooks/External_Forcing_Conditions-NOWIND.ipynb) - these notebooks create an exf folder and files inside within the input directory
+4. External Forcing Conditions (jupyter_notebooks/External_Forcing_Conditions.ipynb) - these notebooks create an exf folder and files inside within the input directory
 
 
 5. Boundary Conditions (jupyter_notebooks/Boundary_Conditions_Si.ipynb) - this notebook creates the obcs folder in the input directory
@@ -114,7 +108,7 @@ make
 
 
 
-## Step 4: Run the model with full upwelling winds
+## Step 4: Run the model
 Make a run directory and link the following directories by running the following code:
 
 ln -s ../namelist/* .
@@ -129,6 +123,12 @@ Then create the data output directories (diags) which match the data.diagnostics
 mkdir diags
 
 mkdir diags/[one folder for each diag]
+
+Diags folders:
+
+TS_surf_daily_mean - temperature and salinity surface daily means
+
+BGC_daily_Si - silicate 3D daily means
 
 
 Once everything is ready, create a .slm file with the appropriate processors:
@@ -161,13 +161,6 @@ sbatch Upwell_Si.slm
 Check if your model is running using squeue
 
 
-## Step 5: Run the model with the 1/3 upwelling winds
-Run the new external forcing conditions with 1/3 winds (jupyter_notebooks/External_Forcing_Conditions-NOWIND.ipynb) and upload the new exf folder into the input directory.
-
-Create a new directory and follow the step 4 instructions, making sure to upload the new files. If the files are the same name, you don't need to change anything, but if they have different names then edit the data.exf file to point to the modified wind files.
-
-Submit the new job script and rerun the model.
-
 
 
 ## Step 5: Analyze the Results
@@ -177,7 +170,7 @@ scp -r [username]@spartan03.sjsu.edu:/scratch/[username]/MITgcm/verification/tut
 
 
 I used the following notebooks to analyze my data:
-Plots (jupyter_notebooks/)
+Surface Movies (jupyter_notebooks/)
 
 Profiles (jupyter_notebooks/)
 
