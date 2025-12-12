@@ -5,3 +5,4 @@ files are too large:
   VVEL_IC.bin
   SILICATE_IC.bin	
   UVEL_IC.bin
+create using: jupyter_notebooks/InitialConditions_Si.ipynb.ipynb
