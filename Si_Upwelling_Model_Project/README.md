@@ -170,9 +170,20 @@ scp -r [username]@spartan03.sjsu.edu:/scratch/[username]/MITgcm/verification/tut
 
 
 I used the following notebooks to analyze my data:
-Surface Movies (jupyter_notebooks/)
+To visualize my data:
+Movies of surface conditions over time of silicate, temperature, and salinity (jupyter_notebooks/)
 
-Profiles (jupyter_notebooks/)
+To answer my scientific question:
+Timeseries of surface silicate, temperate, and salinity at set locations near shore and off shore (jupyter_notebooks/)
 
-Answering the Science Question (jupyter_notebooks/)
 
+
+# Analysis of my model
+
+Originally I planned to create different scales of winds to decrease the upwelling strength and see the difference between nutrient movement in the Monterey Bay. I ran the new model with 1/3 of the winds but the data was exactly the same for both models.
+
+My silicate ptracer is interesting to see how the nutrient dynamics move in the Monterey Bay but it is missing biological processes. The consistent high concentrations near shore are odd, and I want to say it is upwelling but the other dynamics don't agree. For instance, the temperature goes very high and then fills the entire Monterey Bay with even temperatures. These effects lead me to belive that my boundary conditions may be set in a weird way.
+
+The model output shows several nearshore nutrient and salinity peaks suggestive of upwelling, but these events often coincide with temperatures that are warmer than expected for classic upwelling. This indicates that some nutrient-rich signals may result from offshore advection or vertical mixing within Monterey Bay, rather than upwelling within the bay. Other locations, outside the bay do display more traditional upwelling-like conditions, high nutrients with higher salinity and lower temperatures, reflecting regional upwelling occurring north of Monterey Bay and subsequently being transported into the outer bay. 
+
+The weaker nearshore upwelling signal may be due to canyon-driven mixing and retention while the upwelling dynamics are seen off-shore due to the regional and highly zoomed in grid i chose.
